@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <div>
       <nav
-      className={clsx(`sticky inset-x-0 top-0 z-30 w-full transition-all`, {
-        "border-b border-gray-200 bg-white/75 backdrop-blur-lg": scrolled,
-      })}>
+        className={clsx(`sticky inset-x-0 top-0 z-30 w-full transition-all`, {
+          "border-b border-gray-200 bg-white/75 backdrop-blur-lg": scrolled,
+        })}>
         <div className="mx-auto w-full max-w-screen-xl px-2.5 md:px-20 ">
           <div className='flex h-14 items-center justify-between'>
             <h1 className='text-4xl font-extrabold tracking-tight lg:text-4xl'>Vyclr</h1>
@@ -24,6 +24,27 @@ export default function Home() {
           </div>
         </div>
       </nav>
+
+      <div className="grid lg:grid-cols-2 gap-4 md:grid-cols-1">
+        <div className="bg-gray-200 p-4">
+          <h1 className='mt-5 font-display text-4xl font-extrabold leading-[1.15] text-black sm:text-6xl sm:leading-[1.15]'>
+            Unleash Lifelike Storytelling
+            <br />
+            <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#FF0080] to-[#7928CA]'>Excellence</span>
+          </h1>
+          <h2 className='mt-5 text-gray-600 sm:text-xl'>
+            Unleash unparalleled storytelling with our cutting-edge Text to Speech and Voice Cloning software, offering captivating, immersive, and lifelike voices for creators and publishers seeking narrative excellence.
+          </h2>
+        </div>
+        <div className="bg-gray-200 p-4">
+          {/* Content for the second column */}
+        </div>
+      </div>
+
+      {/* Header */}
+      <div className='mx-auto mb-10 mt-12 max-w-md px-2.5 text-center sm:max-w-lg sm:px-0'>
+
+      </div>
     </div>
   )
 }
